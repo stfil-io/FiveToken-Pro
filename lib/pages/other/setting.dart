@@ -13,6 +13,7 @@ class SetPageState extends State<SetPage> {
   String get lang {
     return Global.langCode == 'zh' ? 'cn' : 'en';
   }
+
   @override
   Widget build(BuildContext context) {
     return CommonScaffold(
@@ -26,19 +27,6 @@ class SetPageState extends State<SetPage> {
                 child: SingleChildScrollView(
               child: Column(
                 children: [
-                  TapCard(
-                    items: [
-                      CardItem(
-                        label: 'addrBook'.tr,
-                        onTap: () {
-                          Get.toNamed('/addressBook/index');
-                        },
-                      )
-                    ],
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
                   TapCard(
                     items: [
                       CardItem(
@@ -92,27 +80,6 @@ class SetPageState extends State<SetPage> {
                           OpenedBox.multiApproveInstance
                               .deleteAll(OpenedBox.multiApproveInstance.keys);
                           showCustomToast('opSucc'.tr);
-                        },
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  TapCard(
-                    items: [
-                      CardItem(
-                        label: 'service'.tr,
-                        onTap: () {
-                          var url = 'https://fivetoken.io/private?lang=$lang';
-                          goWebviewPage(url: url, title: 'service'.tr);
-                        },
-                      ),
-                      CardItem(
-                        label: 'clause'.tr,
-                        onTap: () {
-                          var url = 'https://fivetoken.io/service?lang=$lang';
-                          goWebviewPage(url: url, title: 'clause'.tr);
                         },
                       ),
                     ],

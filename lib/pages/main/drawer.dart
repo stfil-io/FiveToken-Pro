@@ -66,70 +66,12 @@ class DrawerBody extends StatelessWidget {
           ),
           DrawerItem(
             onTap: () {
-              Get.back();
-              var url =
-                  '$filscanWeb/tipset/address-detail?address=$addr&utm_source=filwallet_app';
-              goWebviewPage(title: 'detail'.tr, url: url);
-            },
-            label: 'filscan'.tr,
-            iconPath: 'browser.png',
-          ),
-          DrawerItem(
-            onTap: () {
-              Get.toNamed(discoveryPage);
-            },
-            label: 'discovery'.tr,
-            iconPath: 'dis.png',
-          ),
-          Divider(thickness: .2),
-          DrawerItem(
-            onTap: () {
-              Share.share(addr);
-            },
-            label: 'shareAddr'.tr,
-            iconPath: 'share.png',
-          ),
-          DrawerItem(
-            onTap: () {
               Get.toNamed(setPage);
             },
             label: 'set'.tr,
             iconPath: 'setting.png',
           ),
-          DrawerItem(
-            onTap: () {
-              var url = Global.langCode == 'zh'
-                  ? 'https://docs.google.com/forms/d/e/1FAIpQLSeZrn_8u6GUHlQQRZdvwRUrhCNOCiopVe1_z9alvOiyQFJW5A/viewform?usp=sf_link'
-                  : 'https://docs.google.com/forms/d/e/1FAIpQLSfXRxdhK8NPcMxrHtDNpocFGZ5sFpINmcurYes-5x2c80aAdQ/viewform?usp=sf_link';
-              goWebviewPage(url: url, title: 'feedback'.tr);
-            },
-            label: 'feedback'.tr,
-            iconPath: 'feedback.png',
-          ),
-          Divider(thickness: .2),
           Spacer(),
-          Container(
-            child: Row(
-              children: [
-                SizedBox(
-                  width: 12,
-                ),
-                Image(
-                  width: 25,
-                  image: AssetImage('images/fivetoken.png'),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                CommonText(
-                  'FiveToken',
-                  size: 14,
-                  weight: FontWeight.w500,
-                  color: CustomColor.primary,
-                )
-              ],
-            ),
-          ),
           SizedBox(
             height: 30,
           )
