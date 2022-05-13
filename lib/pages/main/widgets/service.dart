@@ -257,6 +257,25 @@ class OfflineService extends StatelessWidget {
           children: [
             IconBtn(
               onTap: () {
+                Get.toNamed(walletCodePage);
+              },
+              path: 'send.png',
+              color: CustomColor.primary,
+            ),
+            CommonText(
+              'rec'.tr,
+              color: Color(0xffB4B5B7),
+              size: 10,
+            )
+          ],
+        ),
+        SizedBox(
+          width: 30,
+        ),
+        Column(
+          children: [
+            IconBtn(
+              onTap: () {
                 Get.toNamed(signIndexPage);
                 // showCustomDialog(context);
               },

@@ -23,6 +23,11 @@ class SignIndexPageState extends State<SignIndexPage> {
             var message = TMessage.fromJson(mes);
             this.message = message;
           });
+          if (showSigned) {
+            showPassDialog(context, (String pass) {
+              signMessage(pass);
+            });
+          }
         } catch (e) {
           showCustomError('errorMesFormat'.tr);
         }
