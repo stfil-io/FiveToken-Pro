@@ -7,6 +7,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:oktoast/oktoast.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import './routes/routes.dart';
+import 'package:fil/widgets/dialog.dart';
+
+var isShowCustomDialog = false;
+
+final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 final RouteObserver<PageRoute> routeObserver = RouteObserver<PageRoute>();
 
@@ -99,6 +104,7 @@ class AppState extends State<App> with WidgetsBindingObserver {
       OpenedBox.addressInsance.deleteAll(list.map((wal) => wal.addrWithNet));
     }
   }
+
   void initDevice() async {
     await initDeviceInfo();
     await listenNetwork();
@@ -106,13 +112,23 @@ class AppState extends State<App> with WidgetsBindingObserver {
 
   Future listenNetwork() async {
     var connectivityResult = await Connectivity().checkConnectivity();
+    const timeout = const Duration(milliseconds: 0);
     bool online = connectivityResult != ConnectivityResult.none;
     Global.online = online;
+    BuildContext context = navigatorKey.currentState.overlay.context;
     Connectivity().onConnectivityChanged.listen((event) {
-      if (event == ConnectivityResult.none) {
-        Global.online = false;
-      } else {
+      if ((event == ConnectivityResult.mobile ||
+              event == ConnectivityResult.wifi) &&
+          !isShowCustomDialog) {
         Global.online = true;
+        isShowCustomDialog = true;
+        Timer(timeout, () {
+          showNetWorkDialog(context);
+        });
+      } else {
+        if (isShowCustomDialog) Navigator.pop(context);
+        isShowCustomDialog = false;
+        Global.online = false;
       }
     });
   }
@@ -124,6 +140,7 @@ class AppState extends State<App> with WidgetsBindingObserver {
         dismissOtherOnShow: true,
         child: GetMaterialApp(
             title: "FiveToken Pro",
+            navigatorKey: navigatorKey,
             getPages: initRoutes(),
             locale: Locale(Global.langCode ?? 'en'),
             translations: Messages(),

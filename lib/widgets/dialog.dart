@@ -203,6 +203,106 @@ void showPassDialog(BuildContext context, SingleStringParamFn callback,
       color: CustomColor.bgGrey);
 }
 
+void showNetWorkDialog(BuildContext context) async {
+  var result = showDialog(
+      barrierDismissible: false,
+      context: context,
+      builder: (BuildContext context) {
+        return WillPopScope(
+            child: Container(
+                child: Center(
+                    child: Container(
+                        width: 430,
+                        height: 200,
+                        child: Column(
+                          children: [
+                            Container(
+                              padding: EdgeInsets.all(20),
+                              width: 289,
+                              // height: 230,
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                      color: Color.fromARGB(255, 229, 229, 229),
+                                      width: 1,
+                                      style: BorderStyle.solid),
+                                  color: Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(14)),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Column(
+                                    children: [
+                                      Text(
+                                        '提示',
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w400,
+                                          fontSize: 18,
+                                          decoration: TextDecoration.none,
+                                          color: Color.fromARGB(
+                                            255,
+                                            0,
+                                            0,
+                                            0,
+                                          ),
+                                        ),
+                                      ),
+                                      Container(
+                                        width: 250,
+                                        // height: 230,
+                                        padding: EdgeInsets.only(top: 20),
+                                        child: Text(
+                                          '当前状态为网络状态',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.w500,
+                                            height: 1.6,
+                                            fontSize: 14,
+                                            decoration: TextDecoration.none,
+                                            color: Color.fromARGB(
+                                                255, 152, 152, 152),
+                                          ),
+                                        ),
+                                      ),
+                                      GestureDetector(
+                                        onTap: () {
+                                          Navigator.pop(context);
+                                          SystemNavigator.pop();
+                                        },
+                                        child: Container(
+                                          width: 80,
+                                          height: 20,
+                                          decoration: new BoxDecoration(
+                                              color: Color.fromARGB(
+                                                  255, 1, 207, 194),
+                                              borderRadius:
+                                                  BorderRadius.circular(14)),
+                                          margin: EdgeInsets.only(top: 20),
+                                          child: Text(
+                                            '确定',
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.w500,
+                                              height: 1.5,
+                                              fontSize: 12,
+                                              decoration: TextDecoration.none,
+                                              color: Color.fromARGB(
+                                                  255, 255, 255, 255),
+                                            ),
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        )))),
+            onWillPop: () async => false);
+      });
+  return result;
+}
+
 void showDeleteDialog(BuildContext context,
     {String title, String content, Noop onDelete}) {
   showCustomDialog(

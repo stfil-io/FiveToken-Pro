@@ -1,6 +1,7 @@
 import 'package:fil/index.dart';
 
 typedef EditCallback = void Function(TMessage);
+
 /// widget to show the info of a unsigned message
 class UnsignedMessage extends StatefulWidget {
   final Noop onTap;
@@ -115,6 +116,7 @@ class UnsignedMessageState extends State<UnsignedMessage> {
     ]);
   }
 }
+
 /// widget which can edit nonce and gas of a unsigned message
 class EditableMessage extends StatefulWidget {
   final TMessage message;

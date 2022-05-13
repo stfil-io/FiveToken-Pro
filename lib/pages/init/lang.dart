@@ -1,4 +1,5 @@
 import 'package:fil/index.dart';
+
 /// language set
 class SelectLangPage extends StatelessWidget {
   void selectLang(String lang) async {
@@ -6,7 +7,9 @@ class SelectLangPage extends StatelessWidget {
     Get.updateLocale(l);
     Global.langCode = lang;
     Global.store.setString(StoreKeyLanguage, lang);
-    Get.toNamed(initModePage);
+    Global.onlineMode = false;
+    Global.store.setBool('runMode', false);
+    Get.toNamed(initWalletPage);
   }
 
   @override

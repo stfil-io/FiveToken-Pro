@@ -1,11 +1,13 @@
 import 'package:fil/index.dart';
+
 /// run mode set
 class WalletModePage extends StatelessWidget {
-  void setMode(bool mode){
-    Global.onlineMode=mode;
+  void setMode(bool mode) {
+    Global.onlineMode = mode;
     Global.store.setBool('runMode', mode);
     Get.toNamed(initWalletPage);
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,7 +86,10 @@ class WalletModePage extends StatelessWidget {
               ),
             ),
             Spacer(),
-            DocButton(page: initModePage,color: Colors.white,),
+            DocButton(
+              page: initModePage,
+              color: Colors.white,
+            ),
             SizedBox(
               height: 10,
             ),

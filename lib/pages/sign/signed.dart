@@ -1,4 +1,5 @@
 import 'package:fil/index.dart';
+
 /// signed message
 class SignedMessageBody extends StatelessWidget {
   final SignedMessage signedMessage;

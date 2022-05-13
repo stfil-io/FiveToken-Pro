@@ -1,7 +1,5 @@
-
 import 'package:fil/index.dart';
-
-
+import 'package:flutter/services.dart';
 
 void tapSign(List<MultiSignWallet> multiList) {
   var comleteList = multiList.where((wal) => wal.status == 1).toList();
@@ -71,7 +69,6 @@ void tapSign(List<MultiSignWallet> multiList) {
 
     // Get.toNamed(multiMainPage);
     if (comleteList.length == 1) {
-      
       $store.setMultiWallet(comleteList[0]);
       Global.store.setString('activeMultiAddress', comleteList[0].addrWithNet);
       Get.toNamed(multiMainPage);
@@ -280,6 +277,7 @@ class OfflineService extends StatelessWidget {
             IconBtn(
               onTap: () {
                 Get.toNamed(signIndexPage);
+                // showCustomDialog(context);
               },
               path: 'multisig.png',
               color: Color(0xff5C8BCB),
