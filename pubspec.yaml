@@ -36,11 +36,11 @@ dependencies:
   crypto: 2.1.3
   encrypt: ^4.0.0
   flotus:
-    git: git@gitlab.kpy.com:filecoin-project/FiveToken-flotus.git
-    # git: http://gitlab.kpy.com/filecoin-project/FiveToken-flotus.git
+    # git: git@gitlab.kpy.com:filecoin-project/FiveToken-flotus.git
+    git: http://gitlab.kpy.com/filecoin-project/FiveToken-flotus.git
   bls:
-    git: git@gitlab.kpy.com:filecoin-project/FiveToken-bls.git
-    # git: http://gitlab.kpy.com/filecoin-project/FiveToken-bls.git
+    # git: git@gitlab.kpy.com:filecoin-project/FiveToken-bls.git
+    git: http://gitlab.kpy.com/filecoin-project/FiveToken-bls.git
   permission_handler: 3.0.1
   get:
   qr_flutter: ^3.1.0
