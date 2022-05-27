@@ -374,10 +374,7 @@ class MultiMainPageState extends State<MultiMainPage> with RouteAware {
                             height: 10,
                           ),
                           Obx(() => CommonText(
-                                formatFil(
-                                  $store.multiWal.balance,
-                                  size: 6
-                                ),
+                                formatFil($store.multiWal.balance, size: 6),
                                 size: 30,
                                 weight: FontWeight.w800,
                               )),

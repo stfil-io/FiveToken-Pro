@@ -47,10 +47,10 @@ class AboutPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Image(
-                    image: AssetImage("images/ic_launcher.png"),
+                    image: AssetImage("images/fivetoken-w.png"),
                     width: 100,
                   ),
-                  Text('FiveToken Pro',
+                  Text('FILMeet Token',
                       style: TextStyle(fontSize: 20, color: Color(FTips1))),
                   SizedBox(
                     height: _gapHeight,
@@ -59,67 +59,67 @@ class AboutPage extends StatelessWidget {
                       style: TextStyle(fontSize: 13, color: Color(FTips2)))
                 ],
               )),
-          Container(
-              child: Column(
-            children: <Widget>[
-              ListTile(
-                onTap: () {
-                  goWebviewPage(
-                      url: "https://fivetoken.io", title: 'Fivetoken');
-                },
-                title: Row(
-                  children: <Widget>[
-                    Text('aboutWeb'.tr, style: ListLabelStyle),
-                    Expanded(
-                      child: SizedBox(),
-                    ),
-                    Text("https://fivetoken.io", style: _textStyle)
-                  ],
-                ),
-              ),
-              _divider,
-              ListTile(
-                onTap: () {
-                  goWebviewPage(url: "https://m.filscan.io", title: 'Filscan');
-                },
-                title: Row(
-                  children: <Widget>[
-                    Text('aboutData'.tr, style: ListLabelStyle),
-                    Spacer(),
-                    Text("https://filscan.io", style: _textStyle)
-                  ],
-                ),
-              ),
-              _divider,
-              ListTile(
-                title: Row(
-                  children: <Widget>[
-                    Text('wechat'.tr, style: ListLabelStyle),
-                    Expanded(
-                      child: SizedBox(),
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        copyText('FilecoinWallet001');
-                        showCustomToast('copySucc'.tr);
-                      },
-                      child: Row(
-                        children: [
-                          IconCopy2,
-                          SizedBox(
-                            width: 5,
-                          ),
-                          Text('FilecoinWallet001',
-                              style:
-                                  TextStyle(fontSize: 15, color: Color(FTips2)))
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ))
+          // Container(
+          //     child: Column(
+          //   children: <Widget>[
+          //     ListTile(
+          //       onTap: () {
+          //         goWebviewPage(
+          //             url: "https://fivetoken.io", title: 'Fivetoken');
+          //       },
+          //       title: Row(
+          //         children: <Widget>[
+          //           Text('aboutWeb'.tr, style: ListLabelStyle),
+          //           Expanded(
+          //             child: SizedBox(),
+          //           ),
+          //           Text("https://fivetoken.io", style: _textStyle)
+          //         ],
+          //       ),
+          //     ),
+          //     _divider,
+          //     ListTile(
+          //       onTap: () {
+          //         goWebviewPage(url: "https://m.filscan.io", title: 'Filscan');
+          //       },
+          //       title: Row(
+          //         children: <Widget>[
+          //           Text('aboutData'.tr, style: ListLabelStyle),
+          //           Spacer(),
+          //           Text("https://filscan.io", style: _textStyle)
+          //         ],
+          //       ),
+          //     ),
+          //     _divider,
+          //     ListTile(
+          //       title: Row(
+          //         children: <Widget>[
+          //           Text('wechat'.tr, style: ListLabelStyle),
+          //           Expanded(
+          //             child: SizedBox(),
+          //           ),
+          //           GestureDetector(
+          //             onTap: () {
+          //               copyText('FilecoinWallet001');
+          //               showCustomToast('copySucc'.tr);
+          //             },
+          //             child: Row(
+          //               children: [
+          //                 IconCopy2,
+          //                 SizedBox(
+          //                   width: 5,
+          //                 ),
+          //                 Text('FilecoinWallet001',
+          //                     style:
+          //                         TextStyle(fontSize: 15, color: Color(FTips2)))
+          //               ],
+          //             ),
+          //           ),
+          //         ],
+          //       ),
+          //     ),
+          //   ],
+          // ))
         ],
       ),
     );

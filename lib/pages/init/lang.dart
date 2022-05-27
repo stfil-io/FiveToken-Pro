@@ -28,8 +28,8 @@ class SelectLangPage extends StatelessWidget {
                     padding: EdgeInsets.fromLTRB(0, 40, 0, 12),
                   ),
                   CommonText(
-                    'FiveToken Pro',
-                    color: Colors.white,
+                    'FILMeet Token',
+                    color: CustomColor.newTitle,
                     size: 20,
                     weight: FontWeight.w800,
                   )
@@ -45,7 +45,7 @@ class SelectLangPage extends StatelessWidget {
                     padding: EdgeInsets.fromLTRB(0, 85, 0, 13),
                     child: CommonText(
                       'selectLang'.tr,
-                      color: Colors.white,
+                      color: CustomColor.newTitle,
                       size: 14,
                     ),
                   ),
@@ -76,7 +76,7 @@ class SelectLangPage extends StatelessWidget {
             Spacer(),
             CommonText(
               Global.version,
-              color: Colors.white,
+              color: CustomColor.newTitle,
               size: 14,
             ),
             SizedBox(

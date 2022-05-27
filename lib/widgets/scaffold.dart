@@ -79,7 +79,7 @@ class CommonScaffold extends StatelessWidget {
                 child: FlatButton(
                   child: Text(
                     footerText,
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: CustomColor.newTitle),
                   ),
                   onPressed: () {
                     onPressed();

@@ -81,13 +81,15 @@ class MainPageState extends State<MainPage> {
                             Get.back();
                           },
                         ),
-                        CommonText('selectWallet'.tr, color: Colors.white),
+                        CommonText('selectWallet'.tr,
+                            color: CustomColor.newTitle),
                         GestureDetector(
                           onTap: () {
                             Get.back();
                             Get.toNamed(walletSelectPage);
                           },
-                          child: CommonText('manage'.tr, color: Colors.white),
+                          child: CommonText('manage'.tr,
+                              color: CustomColor.newTitle),
                         )
                       ],
                     ),

@@ -5,8 +5,13 @@ class WalletSelect extends StatefulWidget {
   final SingleParamCallback<Wallet> onTap;
   final bool more;
   final String filterType;
-  final double footerHeight; 
-  WalletSelect({this.bottom, this.onTap, this.more = false, this.filterType,this.footerHeight=0});
+  final double footerHeight;
+  WalletSelect(
+      {this.bottom,
+      this.onTap,
+      this.more = false,
+      this.filterType,
+      this.footerHeight = 0});
   @override
   State<StatefulWidget> createState() {
     return WalletSelectState();
@@ -239,8 +244,8 @@ class TypedListWidget extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            CommonText.white(wallet.label, size: 16),
-                            CommonText.white(
+                            CommonText.blue(wallet.label, size: 16),
+                            CommonText.blue(
                               dotString(str: wallet.address),
                               size: 12,
                             ),

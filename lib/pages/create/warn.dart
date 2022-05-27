@@ -1,4 +1,5 @@
 import 'package:fil/index.dart';
+
 /// show the importance of mne
 class CreateWarnPage extends StatelessWidget {
   @override
@@ -37,7 +38,7 @@ class CreateWarnPage extends StatelessWidget {
                       CommonText(
                         'warn'.tr,
                         size: 14,
-                        color: Colors.white,
+                        color: CustomColor.newTitle,
                         weight: FontWeight.w500,
                       ),
                       // CommonText(

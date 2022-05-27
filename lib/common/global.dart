@@ -10,12 +10,12 @@ const SignTypeBls = 2;
 const SignTypeSecp = 1;
 const String NetPrefix = 'f';
 
-
 var filscanWeb = Global.netPrefix == 'f'
     ? "https://m.filscan.io"
     : "https://calibration.filscan.io/mobile";
+
 class Global {
-  static String version = "v2.2.0";
+  static String version = "v1.0.0";
 
   static bool get isRelease => bool.fromEnvironment("dart.vm.product");
 

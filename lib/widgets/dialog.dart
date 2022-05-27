@@ -55,7 +55,7 @@ class CommonTitle extends StatelessWidget {
           child: CommonText(
             title,
             size: 14,
-            color: Colors.white,
+            color: CustomColor.newTitle,
             weight: FontWeight.w500,
           ),
         )),

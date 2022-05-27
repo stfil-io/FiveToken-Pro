@@ -1,6 +1,7 @@
 import 'package:fil/common/index.dart';
 import 'package:fil/index.dart';
 import 'package:bip39/bip39.dart' as bip39;
+
 /// check if user has remembered the mne
 class MneCheckPage extends StatefulWidget {
   @override
@@ -151,6 +152,7 @@ class MneCheckPageState extends State<MneCheckPage> {
                 return MneItem(
                   label: unSelectedList[index],
                   bg: CustomColor.primary,
+                  title: CustomColor.newTitle,
                   onTap: () {
                     handleSelect(index);
                   },

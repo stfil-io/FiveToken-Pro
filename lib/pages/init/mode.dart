@@ -41,7 +41,7 @@ class WalletModePage extends StatelessWidget {
                   ),
                   CommonText(
                     'FiveToken Pro',
-                    color: Colors.white,
+                    color: CustomColor.newTitle,
                     size: 20,
                     weight: FontWeight.w800,
                   )
@@ -57,7 +57,7 @@ class WalletModePage extends StatelessWidget {
                     padding: EdgeInsets.fromLTRB(0, 85, 0, 13),
                     child: CommonText(
                       'selectPurpose'.tr,
-                      color: Colors.white,
+                      color: CustomColor.newTitle,
                       size: 14,
                     ),
                   ),
@@ -88,14 +88,14 @@ class WalletModePage extends StatelessWidget {
             Spacer(),
             DocButton(
               page: initModePage,
-              color: Colors.white,
+              color: CustomColor.newTitle,
             ),
             SizedBox(
               height: 10,
             ),
             CommonText(
               Global.version,
-              color: Colors.white,
+              color: CustomColor.newTitle,
               size: 14,
             ),
             SizedBox(
