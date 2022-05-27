@@ -53,19 +53,19 @@ class SetPageState extends State<SetPage> {
                   // SizedBox(
                   //   height: 15,
                   // ),
-                  TapCard(
-                    items: [
-                      CardItem(
-                        label: 'about'.tr,
-                        onTap: () {
-                          Get.toNamed(aboutPage);
-                        },
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
+                  // TapCard(
+                  //   items: [
+                  //     CardItem(
+                  //       label: 'about'.tr,
+                  //       onTap: () {
+                  //         Get.toNamed(aboutPage);
+                  //       },
+                  //     ),
+                  //   ],
+                  // ),
+                  // SizedBox(
+                  //   height: 15,
+                  // ),
                   TapCard(
                     items: [
                       CardItem(
