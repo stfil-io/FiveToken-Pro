@@ -280,7 +280,7 @@ class EditableMessageState extends State<EditableMessage> {
         child: FlatButton(
           child: Text(
             'exitAdvance'.tr,
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: CustomColor.newTitle),
           ),
           onPressed: widget.exit,
           //color: Colors.blue,
