@@ -9,10 +9,6 @@ PODS:
   - flotus (0.0.1):
     - Flutter
   - Flutter (1.0.0)
-  - flutter_is_emulator (0.0.1):
-    - Flutter
-  - image_gallery_saver (0.0.1):
-    - Flutter
   - image_picker (0.0.1):
     - Flutter
   - install_plugin (0.0.1):
@@ -41,8 +37,6 @@ DEPENDENCIES:
   - device_info (from `.symlinks/plugins/device_info/ios`)
   - flotus (from `.symlinks/plugins/flotus/ios`)
   - Flutter (from `Flutter`)
-  - flutter_is_emulator (from `.symlinks/plugins/flutter_is_emulator/ios`)
-  - image_gallery_saver (from `.symlinks/plugins/image_gallery_saver/ios`)
   - image_picker (from `.symlinks/plugins/image_picker/ios`)
   - install_plugin (from `.symlinks/plugins/install_plugin/ios`)
   - package_info (from `.symlinks/plugins/package_info/ios`)
@@ -69,10 +63,6 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/flotus/ios"
   Flutter:
     :path: Flutter
-  flutter_is_emulator:
-    :path: ".symlinks/plugins/flutter_is_emulator/ios"
-  image_gallery_saver:
-    :path: ".symlinks/plugins/image_gallery_saver/ios"
   image_picker:
     :path: ".symlinks/plugins/image_picker/ios"
   install_plugin:
@@ -100,8 +90,6 @@ SPEC CHECKSUMS:
   device_info: d7d233b645a32c40dfdc212de5cf646ca482f175
   flotus: 8b8041a6daa21fb878b099fdd0979d29e0fd2d75
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  flutter_is_emulator: b1d882329a081ea30e0e335f1dbe782f5a34242a
-  image_gallery_saver: 73b3cd8ad9c950c739878af9c311744d1bf5405d
   image_picker: 9c3312491f862b28d21ecd8fdf0ee14e601b3f09
   install_plugin: a13e7ddd2bab0c701b48cd359c26d0394125b6fb
   package_info: 873975fc26034f0b863a300ad47e7f1ac6c7ec62

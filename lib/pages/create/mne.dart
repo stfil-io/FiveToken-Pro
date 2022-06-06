@@ -44,7 +44,7 @@ class MneCreatePageState extends State<MneCreatePage> {
                   alignment: Alignment.center,
                   child: CommonText(
                     'know'.tr,
-                    color: CustomColor.primary,
+                    color: CustomColor.newTitle,
                   ),
                   padding: EdgeInsets.symmetric(vertical: 8),
                 ),
@@ -152,9 +152,15 @@ class MneItem extends StatelessWidget {
   final Noop onTap;
   final String index;
   final Color bg;
+  final Color title;
   final bool remove;
   MneItem(
-      {this.label, this.onTap, this.index = '', this.bg, this.remove = false});
+      {this.label,
+      this.onTap,
+      this.index = '',
+      this.bg,
+      this.remove = false,
+      this.title});
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -173,7 +179,7 @@ class MneItem extends StatelessWidget {
             child: CommonText(
               label,
               size: 14,
-              color: Colors.white,
+              color: title ?? Colors.white,
             ),
           )),
           Positioned(

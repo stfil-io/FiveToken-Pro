@@ -30,9 +30,7 @@ class OfflineWallet extends StatelessWidget {
         ),
         Container(
           child: CommonText.center('notOnline'.tr),
-          padding: EdgeInsets.symmetric(
-            horizontal: 20
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 20),
         ),
       ],
     );
@@ -51,7 +49,7 @@ class CopyWalletAddr extends StatelessWidget {
           child: Obx(() => CommonText(
                 dotString(str: $store.wal.addr),
                 size: 14,
-                color: Color(0xffB4B5B7),
+                color: CustomColor.newTitle,
               )),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(5), color: Color(0xfff8f8f8)),

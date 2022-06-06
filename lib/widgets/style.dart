@@ -75,15 +75,18 @@ class CustomPadding {
 
 class CustomColor {
   static Color get primary {
-    return Color(0xff5CC1CB);
+    // return Color(0xff5CC1CB);
+    return Color(0xff2effcb);
   }
 
   static Color get grey {
-    return Color(0xffB4B5B7);
+    // return Color(0xffB4B5B7);
+    return Color(0xff928fb2);
   }
 
   static Color get bgGrey {
-    return Color(0xfff8f8f8);
+    // return Color(0xfff8f8f8);
+    return Color(0xff0c072b);
   }
 
   static Color get red {
@@ -96,5 +99,17 @@ class CustomColor {
 
   static Color get green {
     return Color(0xff4FDF17);
+  }
+
+  static Color get newTitle {
+    return Color(0xff1e1847);
+  }
+
+  static Color get whiteTitle {
+    return Color(0xfffefeff);
+  }
+
+  static Color get blueBg {
+    return Color(0xff1e1847);
   }
 }

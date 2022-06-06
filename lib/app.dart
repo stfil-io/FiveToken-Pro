@@ -139,7 +139,7 @@ class AppState extends State<App> with WidgetsBindingObserver {
         duration: Duration(seconds: 20),
         dismissOtherOnShow: true,
         child: GetMaterialApp(
-            title: "FiveToken Pro",
+            title: "FILMeet Token",
             navigatorKey: navigatorKey,
             getPages: initRoutes(),
             locale: Locale(Global.langCode ?? 'en'),

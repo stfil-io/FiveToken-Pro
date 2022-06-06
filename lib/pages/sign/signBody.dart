@@ -96,7 +96,7 @@ class DisplayMessage extends StatelessWidget {
                       footerText ?? 'advanced'.tr,
                       size: 14,
                       weight: FontWeight.w500,
-                      color: Colors.white,
+                      color: CustomColor.newTitle,
                     ),
                     decoration: BoxDecoration(
                         color: CustomColor.primary,

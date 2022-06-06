@@ -35,8 +35,8 @@ class WalletInitPage extends StatelessWidget {
                     height: 12,
                   ),
                   CommonText(
-                    'FiveToken Pro',
-                    color: Colors.white,
+                    'FILMeet Token',
+                    color: CustomColor.newTitle,
                     size: 20,
                     weight: FontWeight.w800,
                   )
@@ -54,7 +54,7 @@ class WalletInitPage extends StatelessWidget {
                       padding: EdgeInsets.fromLTRB(0, 85, 0, 12),
                       child: CommonText(
                         'addWallet'.tr,
-                        color: Colors.white,
+                        color: CustomColor.newTitle,
                         size: 14,
                       ),
                     ),
@@ -72,7 +72,7 @@ class WalletInitPage extends StatelessWidget {
                     ),
                     CommonText(
                       'importWallet'.tr,
-                      color: Colors.white,
+                      color: CustomColor.newTitle,
                       size: 14,
                     ),
                     SizedBox(
@@ -133,7 +133,7 @@ class WalletInitPage extends StatelessWidget {
             ),
             CommonText(
               Global.version,
-              color: Colors.white,
+              color: CustomColor.newTitle,
               size: 14,
             ),
             SizedBox(

@@ -50,7 +50,7 @@ class DrawerBody extends StatelessWidget {
                 borderRadius: BorderRadius.circular(5)),
             child: CommonText(
               dotString(str: addr),
-              color: CustomColor.grey,
+              color: CustomColor.whiteTitle,
             ),
           ),
           SizedBox(

@@ -55,7 +55,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "5e02331283f293d95b9a6b896882a91d358bd69a"
+      resolved-ref: ecda0c4304c732a25d110b351e468c3d181a8d93
       url: "http://gitlab.kpy.com/filecoin-project/FiveToken-bls.git"
     source: git
     version: "0.0.1"

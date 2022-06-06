@@ -51,6 +51,15 @@ class CommonText extends StatelessWidget {
       style: TextStyle(fontWeight: weight, fontSize: size, color: Colors.white),
     );
   }
+
+  static Widget blue(String str,
+      {double size = 14, FontWeight weight = FontWeight.w500}) {
+    return Text(
+      str,
+      style: TextStyle(
+          fontWeight: weight, fontSize: size, color: CustomColor.newTitle),
+    );
+  }
 }
 
 class BoldText extends CommonText {

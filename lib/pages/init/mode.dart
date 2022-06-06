@@ -1,14 +1,10 @@
 import 'package:fil/index.dart';
 
-/// language set
-class SelectLangPage extends StatelessWidget {
-  void selectLang(String lang) async {
-    Locale l = Locale(lang);
-    Get.updateLocale(l);
-    Global.langCode = lang;
-    Global.store.setString(StoreKeyLanguage, lang);
-    Global.onlineMode = false;
-    Global.store.setBool('runMode', false);
+/// run mode set
+class WalletModePage extends StatelessWidget {
+  void setMode(bool mode) {
+    Global.onlineMode = mode;
+    Global.store.setBool('runMode', mode);
     Get.toNamed(initWalletPage);
   }
 
@@ -24,11 +20,27 @@ class SelectLangPage extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    child: ImageFil,
-                    padding: EdgeInsets.fromLTRB(0, 40, 0, 12),
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          width: 15,
+                        ),
+                        GestureDetector(
+                          child: ImageAl,
+                          onTap: () {
+                            Get.back();
+                          },
+                        )
+                      ],
+                    ),
+                    padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                  ),
+                  ImageFil,
+                  SizedBox(
+                    height: 12,
                   ),
                   CommonText(
-                    'FILMeet Token',
+                    'FiveToken Pro',
                     color: CustomColor.newTitle,
                     size: 20,
                     weight: FontWeight.w800,
@@ -44,7 +56,7 @@ class SelectLangPage extends StatelessWidget {
                   Container(
                     padding: EdgeInsets.fromLTRB(0, 85, 0, 13),
                     child: CommonText(
-                      'selectLang'.tr,
+                      'selectPurpose'.tr,
                       color: CustomColor.newTitle,
                       size: 14,
                     ),
@@ -52,9 +64,9 @@ class SelectLangPage extends StatelessWidget {
                   TapCard(
                     items: [
                       CardItem(
-                          label: 'English',
+                          label: 'onlineMode'.tr,
                           onTap: () {
-                            selectLang('en');
+                            setMode(true);
                           })
                     ],
                   ),
@@ -64,9 +76,9 @@ class SelectLangPage extends StatelessWidget {
                   TapCard(
                     items: [
                       CardItem(
-                          label: '中文',
+                          label: 'offlineMode'.tr,
                           onTap: () {
-                            selectLang('zh');
+                            setMode(false);
                           })
                     ],
                   ),
@@ -74,6 +86,13 @@ class SelectLangPage extends StatelessWidget {
               ),
             ),
             Spacer(),
+            DocButton(
+              page: initModePage,
+              color: CustomColor.newTitle,
+            ),
+            SizedBox(
+              height: 10,
+            ),
             CommonText(
               Global.version,
               color: CustomColor.newTitle,
