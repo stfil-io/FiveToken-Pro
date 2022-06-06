@@ -1,5 +1,6 @@
 import 'package:fil/index.dart';
 import 'package:share/share.dart';
+
 /// display qrcode of the wallet address
 class WalletCodePage extends StatelessWidget {
   @override
@@ -9,7 +10,7 @@ class WalletCodePage extends StatelessWidget {
       title: 'rec'.tr,
       hasFooter: false,
       barColor: CustomColor.primary,
-      titleColor: Colors.white,
+      titleColor: CustomColor.newTitle,
       background: CustomColor.primary,
       leading: IconButton(
         onPressed: () {
@@ -18,6 +19,7 @@ class WalletCodePage extends StatelessWidget {
         icon: Image(
           width: 20,
           image: AssetImage("images/back-w.png"),
+          color: CustomColor.newTitle,
         ),
         alignment: NavLeadingAlign,
       ),
@@ -35,8 +37,8 @@ class WalletCodePage extends StatelessWidget {
                     width: 10,
                   ),
                   CommonText(
-                    'FiveToken',
-                    color: Colors.white,
+                    'FILMeetToken',
+                    color: CustomColor.newTitle,
                   )
                 ],
               ),
@@ -102,6 +104,7 @@ class WalletQrCode extends StatelessWidget {
                         ),
                         CommonText(
                           'copy'.tr,
+                          color: CustomColor.whiteTitle,
                         )
                       ],
                     ),
@@ -129,6 +132,7 @@ class WalletQrCode extends StatelessWidget {
                         ),
                         CommonText(
                           'share'.tr,
+                          color: CustomColor.whiteTitle,
                         )
                       ],
                     ),
