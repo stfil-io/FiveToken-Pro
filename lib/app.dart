@@ -107,7 +107,7 @@ class AppState extends State<App> with WidgetsBindingObserver {
 
   void initDevice() async {
     await initDeviceInfo();
-    // await listenNetwork();
+    await listenNetwork();
   }
 
   Future listenNetwork() async {
