@@ -76,7 +76,7 @@ class CustomPadding {
 class CustomColor {
   static Color get primary {
     // return Color(0xff5CC1CB);
-    return Color(0xff2effcb);
+    return Color(0xff19cb9f);
   }
 
   static Color get grey {
