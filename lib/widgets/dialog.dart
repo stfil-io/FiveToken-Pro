@@ -18,8 +18,7 @@ void showCustomDialog(BuildContext context, Widget child,
                 Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                      borderRadius: CustomRadius.b8,
-                      color: color ?? Colors.white),
+                      borderRadius: CustomRadius.b8, color: Colors.white),
                   margin: EdgeInsets.symmetric(horizontal: 15),
                   child: child,
                 )
