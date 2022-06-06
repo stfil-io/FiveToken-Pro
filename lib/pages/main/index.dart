@@ -153,8 +153,8 @@ class MainPageState extends State<MainPage> {
                                 child: Padding(
                                   padding: EdgeInsets.only(right: 10),
                                   child: Center(
-                                    child: CommonText('minerManage'.tr),
-                                  ),
+                                      // child: CommonText('minerManage'.tr),
+                                      ),
                                 ),
                               )
                             : Container()),

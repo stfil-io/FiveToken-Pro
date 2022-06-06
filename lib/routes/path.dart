@@ -21,8 +21,8 @@ const String scanPage = '/scan';
 const String setPage = '/set';
 const String langPage = '/lang';
 const String discoveryPage = '/discovery';
-const String aboutPage = "/about";
-const String notificationPage = '/notification';
+// const String aboutPage = "/about";
+// const String notificationPage = '/notification';
 
 //pass
 const String passwordSetPage = "/password/set";

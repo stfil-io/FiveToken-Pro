@@ -2,7 +2,7 @@ import 'package:fil/index.dart';
 
 List<GetPage> getSettingRoutes() {
   var list = <GetPage>[];
-  var about = GetPage(name: aboutPage, page: () => AboutPage());
-  list..add(about);
+  // var about = GetPage(name: aboutPage, page: () => AboutPage());
+  // list;
   return list;
 }

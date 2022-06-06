@@ -1,5 +1,4 @@
 import 'package:fil/index.dart';
-import 'package:fil/pages/other/webview.dart';
 
 /// setting page
 class SetPage extends StatefulWidget {
