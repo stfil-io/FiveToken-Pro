@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:fil/index.dart';
 
 typedef SingleStringParamFn = void Function(String pass);
@@ -250,7 +252,7 @@ void showNetWorkDialog(BuildContext context) async {
                                         // height: 230,
                                         padding: EdgeInsets.only(top: 20),
                                         child: Text(
-                                          '当前状态为网络状态',
+                                          '当前为网络连接状态，请关闭网络使用',
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                             fontWeight: FontWeight.w500,
@@ -265,7 +267,8 @@ void showNetWorkDialog(BuildContext context) async {
                                       GestureDetector(
                                         onTap: () {
                                           Navigator.pop(context);
-                                          SystemNavigator.pop();
+                                          exit(0);
+                                          // SysteRmNavigator.pop();
                                         },
                                         child: Container(
                                           width: 80,

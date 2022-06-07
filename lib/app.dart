@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:connectivity/connectivity.dart';
 import 'package:fil/common/navigation.dart';
 import 'package:fil/i10n/localization.dart';
@@ -116,6 +118,12 @@ class AppState extends State<App> with WidgetsBindingObserver {
     bool online = connectivityResult != ConnectivityResult.none;
     Global.online = online;
     BuildContext context = navigatorKey.currentState.overlay.context;
+    if (Platform.isIOS && Global.online && !isShowCustomDialog) {
+      isShowCustomDialog = true;
+      Timer(timeout, () {
+        showNetWorkDialog(context);
+      });
+    }
     Connectivity().onConnectivityChanged.listen((event) {
       if ((event == ConnectivityResult.mobile ||
               event == ConnectivityResult.wifi) &&
