@@ -1,4 +1,5 @@
 import 'package:fil/index.dart';
+
 /// import wallet by private key
 class ImportPrivateKeyPage extends StatefulWidget {
   @override
@@ -101,6 +102,7 @@ class ImportPrivateKeyPageState extends State<ImportPrivateKeyPage> {
                 onTap: handleScan,
                 child: Image(
                   width: 20,
+                  color: Colors.black,
                   image: AssetImage('images/scan.png'),
                 )),
             padding: EdgeInsets.only(right: 10),
@@ -121,7 +123,8 @@ class ImportPrivateKeyPageState extends State<ImportPrivateKeyPage> {
                     size: 14,
                   ),
                   GestureDetector(
-                    child: Image(width: 20, image: AssetImage('images/cop.png')),
+                    child:
+                        Image(width: 20, image: AssetImage('images/cop.png')),
                     onTap: () async {
                       var data = await Clipboard.getData(Clipboard.kTextPlain);
                       inputControl.text = data.text;

@@ -1,6 +1,7 @@
 import 'package:fil/common/index.dart';
 import 'package:fil/index.dart';
 import 'package:bip39/bip39.dart' as bip39;
+
 /// import wallet by mne
 class ImportMnePage extends StatefulWidget {
   @override
@@ -100,6 +101,7 @@ class ImportMnePageState extends State<ImportMnePage> {
                 onTap: handleScan,
                 child: Image(
                   width: 20,
+                  color: Colors.black,
                   image: AssetImage('images/scan.png'),
                 )),
             padding: EdgeInsets.only(right: 10),
@@ -120,7 +122,8 @@ class ImportMnePageState extends State<ImportMnePage> {
                     size: 14,
                   ),
                   GestureDetector(
-                    child: Image(width: 20, image: AssetImage('images/cop.png')),
+                    child:
+                        Image(width: 20, image: AssetImage('images/cop.png')),
                     onTap: () async {
                       var data = await Clipboard.getData(Clipboard.kTextPlain);
                       inputControl.text = data.text;

@@ -690,6 +690,7 @@ class ChangeWorkerAddress extends StatelessWidget {
               child: Container(
                 child: Image(
                   width: 16,
+                  color: Colors.black,
                   image: AssetImage('images/scan.png'),
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 12),
@@ -718,6 +719,7 @@ class ChangeWorkerAddress extends StatelessWidget {
                       },
                       child: Image(
                         width: 16,
+                        color: Colors.black,
                         image: AssetImage('images/scan.png'),
                       )),
                   SizedBox(
@@ -779,6 +781,7 @@ class CreateMiner extends StatelessWidget {
             child: Container(
               child: Image(
                 width: 16,
+                color: Colors.black,
                 image: AssetImage('images/scan.png'),
               ),
               padding: EdgeInsets.symmetric(horizontal: 12),

@@ -1,4 +1,5 @@
 import 'package:fil/index.dart';
+
 /// add address to local db or edit a address that was exist
 class AddressBookAddPage extends StatefulWidget {
   @override
@@ -87,6 +88,7 @@ class AddressBookAddPageState extends State<AddressBookAddPage> {
               onTap: handleScan,
               child: Image(
                 width: 20,
+                color: Colors.black,
                 image: AssetImage('images/scan.png'),
               )),
           padding: EdgeInsets.only(right: 10),

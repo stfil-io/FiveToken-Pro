@@ -267,6 +267,7 @@ class MultiCreatePageState extends State<MultiCreatePage> {
                                       },
                                       child: Image(
                                         width: 16,
+                                        color: Colors.black,
                                         image: AssetImage('images/scan.png'),
                                       )),
                                   SizedBox(

@@ -57,7 +57,7 @@ class SetPageState extends State<SetPage> {
                       CardItem(
                         label: 'about'.tr,
                         onTap: () {
-                          // Get.toNamed(aboutPage);
+                          Get.toNamed(aboutPage);
                         },
                       ),
                     ],

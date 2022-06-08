@@ -10,6 +10,7 @@ class ScanAction extends StatelessWidget {
           onTap: handleScan,
           child: Image(
             width: 20,
+            color: Colors.black,
             image: AssetImage('images/scan.png'),
           )),
       padding: EdgeInsets.only(right: 10),
