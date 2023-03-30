@@ -1,3 +1,10 @@
+# 安卓打包
+```shell
+cd android
+./gradlew assembleRelease
+
+```
+
 # FILMeet Token
 
 FILMeet Token, to provide professional transaction service for Filecoin storage providers and to bridge Filecoin ecosystem to Web 3 metaverse with reliable ID management.
