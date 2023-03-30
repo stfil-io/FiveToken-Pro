@@ -37,7 +37,9 @@ dependencies:
   encrypt: ^4.0.0
   flotus:
     # git: git@gitlab.kpy.com:filecoin-project/FiveToken-flotus.git
-    git: http://gitlab.kpy.cloud/filecoin-project/FiveToken-flotus.git
+    git:
+      url: http://gitlab.kpy.cloud/filecoin-project/FiveToken-flotus.git
+      ref: 7e4acac1
   bls:
     # git: git@gitlab.kpy.com:filecoin-project/FiveToken-bls.git
     git: http://gitlab.kpy.cloud/filecoin-project/FiveToken-bls.git

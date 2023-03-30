@@ -343,8 +343,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: HEAD
-      resolved-ref: "95d26d302dfa33f7b665b2fde313c1a16b18998b"
+      ref: "7e4acac1"
+      resolved-ref: "7e4acac1abaab9222e3c0e9895dab25bba2dbe4f"
       url: "http://gitlab.kpy.cloud/filecoin-project/FiveToken-flotus.git"
     source: git
     version: "0.0.1"
