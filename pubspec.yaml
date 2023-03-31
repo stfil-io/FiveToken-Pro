@@ -39,7 +39,7 @@ dependencies:
     # git: git@gitlab.kpy.com:filecoin-project/FiveToken-flotus.git
     git:
       url: http://gitlab.kpy.cloud/filecoin-project/FiveToken-flotus.git
-      ref: 7e4acac1
+      ref: 047a0478
   bls:
     # git: git@gitlab.kpy.com:filecoin-project/FiveToken-bls.git
     git: http://gitlab.kpy.cloud/filecoin-project/FiveToken-bls.git
