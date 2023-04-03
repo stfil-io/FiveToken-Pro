@@ -1,9 +1,19 @@
 # 安卓打包
+
 ```shell
 cd android
 ./gradlew assembleRelease
 
 ```
+
+# wlib 注意
+
+打包 wlib （Go）iOS 版本不能使用 M1 （ARM64）电脑打包，否则编译 ios 和打包 ios 会出现问题
+
+安卓只需要替换替换 flotus 中的 wlib 文件，然后修改本项目 pubspec.yaml 中的的 git 版本号然后打包即可 
+
+iOS 则还需要额外替换本项目中的 ios 下的 wlib 包，避免奇怪的问题
+
 
 # FILMeet Token
 
