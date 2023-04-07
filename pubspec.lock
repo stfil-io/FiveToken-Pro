@@ -54,9 +54,9 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: HEAD
-      resolved-ref: "5e02331283f293d95b9a6b896882a91d358bd69a"
-      url: "http://gitlab.kpy.cloud/filecoin-project/FiveToken-bls.git"
+      ref: "7d39a9d576e3a0aeb5a948e4ef4115f94cf96bab"
+      resolved-ref: "7d39a9d576e3a0aeb5a948e4ef4115f94cf96bab"
+      url: "https://github.com/stfil-io/bls.git"
     source: git
     version: "0.0.1"
   boolean_selector:
@@ -343,9 +343,9 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: bf2322ded3be81a9c4fd3fc6a262c686001104ce
-      resolved-ref: bf2322ded3be81a9c4fd3fc6a262c686001104ce
-      url: "http://gitlab.kpy.cloud/filecoin-project/FiveToken-flotus.git"
+      ref: "04ab3995b568f39ee7a0c9b483d34f148659c95f"
+      resolved-ref: "04ab3995b568f39ee7a0c9b483d34f148659c95f"
+      url: "https://github.com/stfil-io/flotus.git"
     source: git
     version: "0.0.1"
   flutter:
