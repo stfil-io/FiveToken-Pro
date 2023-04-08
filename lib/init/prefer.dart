@@ -29,12 +29,8 @@ Future<String> initSharedPreferences() async {
   
   /// As the app support two mode, set when it's start
   /// Offline mode: mainly for sign message
-  var mode = instance.getBool('runMode');
-  if (mode != null) {
-    Global.onlineMode = mode;
-  } else {
-    Global.onlineMode = true;
-  }
+  Global.onlineMode = false;
+
   var walletstr = instance.getString(StoreKeyActiveWallet);
   var activeAddrStr = instance.getString('activeWalletAddress');
   var activeMultiStr = instance.getString('activeMultiAddress');
