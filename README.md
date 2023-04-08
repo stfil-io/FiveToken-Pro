@@ -1,21 +1,6 @@
-# Android packaging
-
-```shell
-cd android
-./gradlew assembleRelease
-
-```
-
-# Wlib attention
-
-Packaging wlib (Go) iOS version cannot be packaged with M1 (ARM64) computer, otherwise there will be problems compiling ios and packaging ios
-
-Android only needs to replace the wlib file in flotus, then modify the git version number in the pubspec.yaml of this project and package it
-iOS also needs to additionally replace the wlib package under ios in this project to avoid strange problems
-
 # STFIL Wallet
 
-STFIL Wallet, to provide professional transaction service for Filecoin storage providers and to bridge Filecoin ecosystem to Web 3 metaverse with reliable ID management.
+STFIL wallet, which provides professional wallet management and message signing for Filecoin storage providers. The STFIL wallet disables the network and is safe and reliable offline.
 
 # Introduction of  product
 
@@ -90,3 +75,19 @@ Check [FiveToken Documentation](https://docs.fivetoken.io/userguide/proapp.html)
 [Project structure](./doc/code-tree.txt)
 
 [Design documents](./doc/impl.md)
+
+
+# Android packaging
+
+```shell
+cd android
+./gradlew assembleRelease
+
+```
+
+# Wlib attention
+
+Packaging wlib (Go) iOS version cannot be packaged with M1 (ARM64) computer, otherwise there will be problems compiling ios and packaging ios
+
+Android only needs to replace the wlib file in flotus, then modify the git version number in the pubspec.yaml of this project and package it
+iOS also needs to additionally replace the wlib package under ios in this project to avoid strange problems
