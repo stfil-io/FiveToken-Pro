@@ -79,38 +79,6 @@ class WalletInitPage extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
-                    Visibility(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          TapCard(
-                            items: [
-                              CardItem(
-                                  label: 'importReadonly'.tr,
-                                  onTap: () {
-                                    Get.toNamed(readonlyPage);
-                                  })
-                            ],
-                          ),
-                          SizedBox(
-                            height: 12,
-                          ),
-                          TapCard(
-                            items: [
-                              CardItem(
-                                  label: 'importMiner'.tr,
-                                  onTap: () {
-                                    Get.toNamed(minerPage);
-                                  })
-                            ],
-                          ),
-                          SizedBox(
-                            height: 20,
-                          )
-                        ],
-                      ),
-                      visible: isOnline,
-                    )
                   ],
                 ),
               ),
