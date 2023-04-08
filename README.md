@@ -4,43 +4,22 @@ STFIL wallet, which provides professional wallet management and message signing 
 
 # Introduction of  product
 
-The future of Filecoin ecosystem and Web3 network are highly expected especially when the related applications are booming because it means Filecoin network has converted the data value from storing to flowing. But from the perspective of Token Infrastructure, Filecoin ecosystem is lacking a product that can both offer professional token service for miners and help Filecoin to expand its awareness to the big blockchain world and the broader communities. Web 3 is lacking a decentralized and comprehensive payment app like PayPal.
+The future of the Filecoin ecosystem and the Web3 network is highly anticipated. The Filecoin nv18 network upgrade supports the writing and publishing of smart contracts, which means that the Filecoin network has transformed data value from storage to flow. It is necessary to provide storage providers with a purer wallet that supports offline message signatures to facilitate message processing and on-chain.
 
-After several iterations, the basic functions of filecoin wallet have strong security, availability and stability. 
-
-The current features FiveToken supports are:
+The current features STFIL Wallet supports are:
 
 - Android & IOS - download and install
 - Create wallet, import mnemonic words and import private key;
-- Support HD wallets (Hierarchical Deterministic) that support to create multiple wallet addresses from one mnemonic phrase
 - Locally store and encrypt the private key
-- FIL transaction & Gas consumption estimation
-- Defined method ID of message by user
-- Display records of messages and message delivery status
 - Address list management
 - Multiple wallet management (add, switch, etc.)
-- Storage provider status monitoring
-- Quick & easy transfer for owner and quick & easy recharge for worker and owner
-- Storage provider withdraw, change owner address, change worker address and push ID message by user
 - Private key backup
 - Information transmission via QR code on different devices
-- Multi-sign wallet (create, import, propose, approve)
-- Read only Wallet
-- Message notification 
 - Cold Wallet
 - Support f1 (secp256k1) & f3 (BLS)
 - Multilingual support (Chinese, English, Japanese, Korean) 
 
 ## How to run
-
-### Necessary dependencies
-
-- Flutter (Channel stable, 1.22.5）
-- Android toolchain - develop for Android devices (Android SDK )
-- Xcode - develop for iOS and macOS 
-- Android Studio 
-
-After install the dependencies above, clone this project and enter the root directory. Then you can run `flutter pub get` to install third-party code required for this project. When the above operations are completed，run `flutter run` to start app.
 
 ## How to switch network
 
@@ -64,7 +43,7 @@ Just run `flutter build apk`
 
 # How to use
 
-Check [FiveToken Documentation](https://docs.fivetoken.io/userguide/proapp.html)
+Check [STFIL Wallet Documentation](https://docs.stfil.io/docs/guides/user/stake)
 
 ## License
 
