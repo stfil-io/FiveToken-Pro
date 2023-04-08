@@ -50,7 +50,7 @@ class AboutPage extends StatelessWidget {
                     image: AssetImage("images/fivetoken-w.png"),
                     width: 100,
                   ),
-                  Text('FILMeet Token',
+                  Text('STFIL Wallet',
                       style: TextStyle(fontSize: 20, color: Color(FTips1))),
                   SizedBox(
                     height: _gapHeight,

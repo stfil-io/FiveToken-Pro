@@ -25,7 +25,6 @@ List<GetPage> initRoutes() {
     ..addAll(getCreateRoutes())
     ..addAll(getMultiRoutes())
     ..addAll(getInitRoutes())
-    //..addAll(getDiscoveryRoute())
     ..addAll(getWalletRoutes())
     ..addAll(getAddressBookRoutes())
     ..addAll(getSignRoutes())

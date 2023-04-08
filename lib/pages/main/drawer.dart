@@ -27,10 +27,6 @@ class DrawerBody extends StatelessWidget {
                   size: 18,
                   weight: FontWeight.w500,
                 ),
-                SizedBox(
-                  width: 10,
-                ),
-                Image(width: 20, image: AssetImage('images/switch.png'))
               ],
             ),
             onTap: () {

@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:connectivity/connectivity.dart';
 import 'package:fil/common/navigation.dart';
 import 'package:fil/i10n/localization.dart';
 import 'package:fil/index.dart';
@@ -9,7 +8,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:oktoast/oktoast.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import './routes/routes.dart';
-import 'package:fil/widgets/dialog.dart';
 
 var isShowCustomDialog = false;
 
@@ -31,12 +29,22 @@ class AppState extends State<App> with WidgetsBindingObserver {
   @override
   void initState() {
     super.initState();
+    setStyle();
     WidgetsBinding.instance.addObserver(this);
     initDevice();
     migrateAddress();
     timer = Timer.periodic(Duration(seconds: 5), (timer) {
       deletePushList();
     });
+  }
+
+  void setStyle() {
+    if (Platform.isAndroid) {
+      SystemUiOverlayStyle systemUiOverlayStyle = SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent,
+          systemNavigationBarColor: Colors.white);
+      SystemChrome.setSystemUIOverlayStyle(systemUiOverlayStyle);
+    }
   }
 
   @override
@@ -109,36 +117,6 @@ class AppState extends State<App> with WidgetsBindingObserver {
 
   void initDevice() async {
     await initDeviceInfo();
-    await listenNetwork();
-  }
-
-  Future listenNetwork() async {
-    var connectivityResult = await Connectivity().checkConnectivity();
-    const timeout = const Duration(milliseconds: 0);
-    bool online = connectivityResult != ConnectivityResult.none;
-    Global.online = online;
-    BuildContext context = navigatorKey.currentState.overlay.context;
-    if (Platform.isIOS && Global.online && !isShowCustomDialog) {
-      isShowCustomDialog = true;
-      Timer(timeout, () {
-        showNetWorkDialog(context);
-      });
-    }
-    Connectivity().onConnectivityChanged.listen((event) {
-      if ((event == ConnectivityResult.mobile ||
-              event == ConnectivityResult.wifi) &&
-          !isShowCustomDialog) {
-        Global.online = true;
-        isShowCustomDialog = true;
-        Timer(timeout, () {
-          showNetWorkDialog(context);
-        });
-      } else {
-        if (isShowCustomDialog) Navigator.pop(context);
-        isShowCustomDialog = false;
-        Global.online = false;
-      }
-    });
   }
 
   @override
@@ -147,7 +125,7 @@ class AppState extends State<App> with WidgetsBindingObserver {
         duration: Duration(seconds: 20),
         dismissOtherOnShow: true,
         child: GetMaterialApp(
-            title: "FILMeet Token",
+            title: "STFIL Wallet",
             navigatorKey: navigatorKey,
             getPages: initRoutes(),
             locale: Locale(Global.langCode ?? 'en'),

@@ -178,7 +178,7 @@ const Map<String, String> EN_LANG = {
   'hdW': "General Account",
   'readonlyW': 'Readonly Account',
   'minerW': 'Peer',
-  'offlineW': 'Offline Account',
+  'offlineW': 'Account',
   'discovery': 'Discovery',
   'create': 'Create Account',
   'importReadonly': 'Import Readonly Account',
@@ -275,7 +275,7 @@ const Map<String, String> EN_LANG = {
   'useReadonly':
       'Send message via read-only account. Open read-only account and scan QR code to send message',
   'notOnline':
-      'Please don’t connect to the internet to ensure the security of private keys / mnemonic words',
+      'To keep the private key/mnemonic safe, this app has disabled network permissions',
   'latestVersion': 'Latest',
   'fromNotMatch': 'The from address does not match the signature address',
   "metaLock": "Locked Fund",

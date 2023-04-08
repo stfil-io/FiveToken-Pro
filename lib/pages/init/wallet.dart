@@ -15,27 +15,11 @@ class WalletInitPage extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    child: Row(
-                      children: [
-                        SizedBox(
-                          width: 15,
-                        ),
-                        GestureDetector(
-                          child: ImageAl,
-                          onTap: () {
-                            Get.back();
-                          },
-                        )
-                      ],
-                    ),
-                    padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
-                  ),
-                  ImageFil,
-                  SizedBox(
-                    height: 12,
+                    child: ImageFil,
+                    padding: EdgeInsets.fromLTRB(0, 40, 0, 12),
                   ),
                   CommonText(
-                    'FILMeet Token',
+                    'STFIL Wallet',
                     color: CustomColor.newTitle,
                     size: 20,
                     weight: FontWeight.w800,

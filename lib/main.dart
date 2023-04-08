@@ -9,12 +9,6 @@ void main() async {
   await initHive();
   var initialRoute = await initSharedPreferences();
   runApp(App(initialRoute));
-  SystemUiOverlayStyle style =
-      SystemUiOverlayStyle(statusBarIconBrightness: Brightness.light);
+  SystemUiOverlayStyle style = SystemUiOverlayStyle(statusBarIconBrightness: Brightness.light);
   SystemChrome.setSystemUIOverlayStyle(style);
-  if (Platform.isAndroid) {
-    SystemUiOverlayStyle systemUiOverlayStyle =
-        SystemUiOverlayStyle(statusBarColor: Colors.transparent);
-    SystemChrome.setSystemUIOverlayStyle(systemUiOverlayStyle);
-  }
 }

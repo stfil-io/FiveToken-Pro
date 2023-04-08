@@ -58,12 +58,6 @@ Future initHive() async {
   await Hive.openBox<MultiApproveMessage>(multiApproveBox);
   await Hive.openBox<MinerSelfBalance>(minerBalanceBox);
   OpenedBox.initBox();
-  // OpenedBox.addressInsance.deleteFromDisk();
-  // OpenedBox.multiMesInsance.deleteFromDisk();
-  // OpenedBox.multiInsance.deleteFromDisk();
-  // OpenedBox.messageInsance.deleteFromDisk();
-  // OpenedBox.minerAddressInstance.deleteFromDisk();
-  // OpenedBox.multiProposeInstance.deleteFromDisk();
 }
 
 class OpenedBox {

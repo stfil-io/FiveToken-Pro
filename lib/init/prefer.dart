@@ -65,10 +65,10 @@ Future<String> initSharedPreferences() async {
       $store.setWallet(wallet);
       instance.setString('activeWalletAddress', wallet.addr);
     } else {
-      initialRoute = initLangPage;
+      initialRoute = initWalletPage;
     }
   } else {
-    initialRoute = initLangPage;
+    initialRoute = initWalletPage;
   }
   /// set current multi-sig wallet
   if (activeMultiStr != null) {

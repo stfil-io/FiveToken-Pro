@@ -32,12 +32,12 @@ class WalletCodePage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image(width: 30, image: AssetImage('images/fivetoken.png')),
+                  CircleAvatar(radius: 15, backgroundImage: AssetImage('images/logo.png')),
                   SizedBox(
                     width: 10,
                   ),
                   CommonText(
-                    'FILMeetToken',
+                    'STFIL Wallet',
                     color: CustomColor.newTitle,
                   )
                 ],

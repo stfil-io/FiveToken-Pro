@@ -25,7 +25,6 @@ class WalletManagePageState extends State<WalletManagePage> {
     if (list.isEmpty) {
       Global.store.remove('activeWalletAddress');
       $store.setWallet(Wallet());
-      Get.offAllNamed(initLangPage);
     } else {
       if (wal.addrWithNet == $store.wal.addrWithNet) {
         var w = list.where((wal) => wal.addrWithNet != '').toList()[0];
