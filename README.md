@@ -21,9 +21,14 @@ The current features STFIL Wallet supports are:
 
 ## How to run
 
-## How to switch network
+### Necessary dependencies
 
-We support Filecoin mainnet and calibration network. If you want to run this app in different network, you can find the file at `lib->common->global.dart` and edit the value of variable NetPrefix. The value of mainnet is 'f' and calibration is 't'.
+- Flutter (Channel stable, 1.22.5）
+- Android toolchain - develop for Android devices (Android SDK )
+- Xcode - develop for iOS and macOS
+- Android Studio
+
+After install the dependencies above, clone this project and enter the root directory. Then you can run `flutter pub get` to install third-party code required for this project. When the above operations are completed，run `flutter run` to start app.
 
 ## Run Unit Test
 
