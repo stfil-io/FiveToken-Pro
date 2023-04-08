@@ -1,4 +1,4 @@
-# 安卓打包
+# Android packaging
 
 ```shell
 cd android
@@ -6,18 +6,16 @@ cd android
 
 ```
 
-# wlib 注意
+# Wlib attention
 
-打包 wlib （Go）iOS 版本不能使用 M1 （ARM64）电脑打包，否则编译 ios 和打包 ios 会出现问题
+Packaging wlib (Go) iOS version cannot be packaged with M1 (ARM64) computer, otherwise there will be problems compiling ios and packaging ios
 
-安卓只需要替换替换 flotus 中的 wlib 文件，然后修改本项目 pubspec.yaml 中的的 git 版本号然后打包即可 
+Android only needs to replace the wlib file in flotus, then modify the git version number in the pubspec.yaml of this project and package it
+iOS also needs to additionally replace the wlib package under ios in this project to avoid strange problems
 
-iOS 则还需要额外替换本项目中的 ios 下的 wlib 包，避免奇怪的问题
+# STFIL Wallet
 
-
-# FILMeet Token
-
-FILMeet Token, to provide professional transaction service for Filecoin storage providers and to bridge Filecoin ecosystem to Web 3 metaverse with reliable ID management.
+STFIL Wallet, to provide professional transaction service for Filecoin storage providers and to bridge Filecoin ecosystem to Web 3 metaverse with reliable ID management.
 
 # Introduction of  product
 
