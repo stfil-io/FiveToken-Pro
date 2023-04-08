@@ -47,7 +47,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "io.fivetokenpro.fil"
+        applicationId "io.stfil.wallet"
         minSdkVersion 22
         targetSdkVersion 32
         versionCode flutterVersionCode.toInteger()
